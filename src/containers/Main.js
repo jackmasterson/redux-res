@@ -58,11 +58,11 @@ export default class Main extends Component {
                 <div 
                     key={keyed}
                     className={keyed}>
-                    {console.log(this.data[keyed])}
                     {this.data[keyed].map((info) =>
                         <Box key={info.id} 
+                            path={info.path = keyed}
                             {...info}
-                            {...info.path = keyed}/>
+                         />
                     )}
                 </div>
                 )}

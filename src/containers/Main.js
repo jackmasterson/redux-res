@@ -54,13 +54,17 @@ export default class Main extends Component {
 
         return (
             <div className="box-wrapper">
-                {keys.map(key => 
-                    this.data[key].map(info =>
-                        <Box 
-                            className={info.class}
-                            key={info.id} 
-                            {...info} />
-                    )
+                {keys.map((keyed) => 
+                <div 
+                    key={keyed}
+                    className={keyed}>
+                    {console.log(this.data[keyed])}
+                    {this.data[keyed].map((info) =>
+                        <Box key={info.id} 
+                            {...info}
+                            {...info.path = keyed}/>
+                    )}
+                </div>
                 )}
                 <NavBar />
             </div>

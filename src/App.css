@@ -23,7 +23,7 @@
 }
 
 .box {
-  margin: 3vw 5vw 3vw 5vw;
+  margin: 3vw 1vw 3vw 1vw;
   display: inline-block;
   text-align: center;
   padding: 3vw;
@@ -35,7 +35,7 @@
 }
 
 .shade {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.5);
   color: white;
   padding: 5px;
   border-radius: 5px;
@@ -63,11 +63,11 @@
 }
 
 .languages {
-    background: url('./img/data.png') center center no-repeat;
+    background: url('./img/ul.png') center center no-repeat;
 }
 
 .comedy {
-  background: url('./img/comedy.jpg') center center no-repeat;
+  background: url('./img/improv.jpg') center center no-repeat;
 }
 
 .frameworks {
@@ -75,7 +75,7 @@
 }
 
 .writing {
-    background: url('./img/data.png') center center no-repeat;
+    background: url('./img/writing.png') center center no-repeat;
 }
 
 .build-tools {

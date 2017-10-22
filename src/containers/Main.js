@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Box} from '../components/Box';
 import NavBar from './NavBar';
+import {Routes} from './../routes';
+
 export default class Main extends Component {
     componentWillMount() {
         this.data = {
@@ -67,6 +69,7 @@ export default class Main extends Component {
                 </div>
                 )}
                 <NavBar />
+                <Routes/>
             </div>
         );
     }

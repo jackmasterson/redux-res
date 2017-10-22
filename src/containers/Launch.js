@@ -12,7 +12,6 @@ class Main extends Component {
         requestData();
     }
     render() {
-        console.log(this);
         let keys = Object.keys(this.props.state.data);
 
         return (

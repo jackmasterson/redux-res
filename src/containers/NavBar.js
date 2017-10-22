@@ -4,6 +4,9 @@ import {NavItem} from '../components/NavItem';
 export default class NavBar extends Component {
     componentWillMount() {
         this.links = [{
+            href: '',
+            text: 'Home',
+        }, {
             href: 'work',
             text: 'Work Examples',
         }, {
@@ -12,9 +15,6 @@ export default class NavBar extends Component {
         }, {
             href: 'extras',
             text: 'Extracurriculars',
-        }, {
-            href: '',
-            text: 'Home',
         }];
     }
     render() {

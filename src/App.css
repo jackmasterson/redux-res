@@ -41,6 +41,11 @@
   border-radius: 5px;
 }
 
+.nav-item {
+  display:inline-block;
+  margin: 15px;
+}
+
 /* different projects */
 .arcade-game {
   background: url('./img/arcade.png') center center no-repeat;

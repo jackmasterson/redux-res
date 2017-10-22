@@ -12,6 +12,9 @@ export default class NavBar extends Component {
         }, {
             href: 'extras',
             text: 'Extracurriculars',
+        }, {
+            href: '',
+            text: 'Home',
         }];
     }
     render() {

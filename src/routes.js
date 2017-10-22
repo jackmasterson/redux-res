@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import SelectedPage from './containers/SelectedPage';
+import Work from './containers/Work';
+import Skills from './containers/Skills';
+import Launch from './containers/Launch';
 
 export const Routes = () => (
     <div >
         <Switch>
-            <Route exact path='/work' component={SelectedPage} />
-            {/* <Route path='/roster/:number' component={Player} /> */}
+            <Route exact path='/' component={Launch} />
+            <Route exact path='/work' component={Work} />
+            <Route exact path='/skills' component={Skills} />
         </Switch>
     </div >
 )

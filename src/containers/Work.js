@@ -10,9 +10,6 @@ const mapStateToProps= (state) => ({
 })
 
 class Work extends Component {
-    componentDidMount() {
-        requestData();
-    }
     render() {
         return (
             <div>

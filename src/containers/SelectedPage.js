@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
-export default class SelectedPage extends Component {
+const mapStateToProps = (state) => ({
+    state: state,
+});
+
+class SelectedPage extends Component {
     render() {
+        console.log(this);
         return (
-            <div>test</div>
-        )
+            <h1>TEST TEXT</h1>
+        );
     }
 }
+
+export default connect(mapStateToProps)(SelectedPage);

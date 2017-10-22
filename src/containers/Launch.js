@@ -8,9 +8,6 @@ const mapStateToProps = (state) => ({
 });
 
 class Main extends Component {
-    componentWillMount() {
-        requestData();
-    }
     render() {
         let keys = Object.keys(this.props.state.data);
 

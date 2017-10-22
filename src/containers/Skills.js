@@ -10,11 +10,7 @@ const mapStateToProps = (state) => ({
 })
 
 class Skills extends Component {
-    componentDidMount() {
-        requestData();
-    }
     render() {
-        console.log(this);
         return (
             <div>
                 {this.props.skills.map(info =>

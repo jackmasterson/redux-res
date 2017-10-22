@@ -10,11 +10,7 @@ const mapStateToProps = (state) => ({
 })
 
 class Extras extends Component {
-    componentDidMount() {
-        requestData();
-    }
     render() {
-        console.log(this);
         return (
             <div>
                 {this.props.extras.map(info =>

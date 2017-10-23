@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Launch from '../containers/Launch';
-import { requestData } from '../reducers/data';
 import {connect} from 'react-redux';
 import {Box} from '../components/Box';
 

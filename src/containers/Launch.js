@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Box } from '../components/Box';
-import {requestData} from '../reducers/data';
 import {connect} from 'react-redux';
 
 const mapStateToProps = (state) => ({

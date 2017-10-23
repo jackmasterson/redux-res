@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Switch } from 'react-router-dom';
-import {Routes} from './../routes';
+import { Link } from 'react-router-dom';
 
 export const NavItem = (data) => (
     <div className="nav-item">

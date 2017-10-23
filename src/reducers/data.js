@@ -45,8 +45,10 @@ const initialState = {
 }
 
 const DATA_REQUESTED = 'DATA_REQUESTED';
+const FILTER_APPLIED = 'FILTER_APPLIED';
 
-export const dataRequested = (data) => ({ action: DATA_REQUESTED, payload: data });
+export const dataRequested = (data) => ({ type: DATA_REQUESTED, payload: data });
+export const applyFilter = (data) => ({ type: FILTER_APPLIED, payload: data });
 
 export const requestData = () => {
     return (dispatch) => {
@@ -54,10 +56,18 @@ export const requestData = () => {
     }
 }
 
+export const filterNow = (info) => {
+    return (dispatch) => {
+        dispatch(applyFilter(info));
+    }
+}
+
 export default (state = initialState, action) => {
-    switch (action.stype) {
+    switch (action.type) {
         case DATA_REQUESTED:
-            return {...state, data: action.payload}
+            return {...state, data: action.payload, filter: '' }
+        case FILTER_APPLIED:
+            return {...state, data: {...state.data}, filter: action.payload }
         default:
             return state;
     }

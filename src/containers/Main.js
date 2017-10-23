@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Box} from '../components/Box';
 import NavBar from './NavBar';
 import {Routes} from './../routes';
 

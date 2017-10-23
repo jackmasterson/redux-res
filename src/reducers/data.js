@@ -24,6 +24,12 @@ const initialState = {
         key: 5,
         class: 'arcade-game',
         category: 'projects',
+    }, {
+        title: 'Neighborhood Map',
+        key: 6,
+        class: 'neighborhood-map',
+        category: 'projects',
+        src: 'https://rawgit.com/jackmasterson/mapped/master/app/index.html',
     }],
     skillset: [{
         title: 'Languages',

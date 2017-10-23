@@ -30,7 +30,10 @@ class SelectedPage extends Component {
     render() {
         if (this.props.filter) {
             return (
-                <h1>{this.props.filter.title}</h1>
+                <div>
+                    <h1>{this.props.filter.title}</h1>
+                    <iframe className="preview" src={this.props.filter.src}></iframe>
+                </div>
             );
         } else {
             return (

@@ -46,6 +46,11 @@
   margin: 15px;
 }
 
+.preview {
+  height: 100vh;
+  width: 100vw;
+}
+
 /* different projects */
 .arcade-game {
   background: url('./img/arcade.png') center center no-repeat;
@@ -86,6 +91,11 @@
 .build-tools {
     background: url('./img/data.png') center center no-repeat;
 }
+
+.neighborhood-map {
+    background: url('./img/map.png') center center no-repeat;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

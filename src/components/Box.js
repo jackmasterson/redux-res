@@ -5,7 +5,7 @@ export const Box = (data) => {
     return (
         <div className={`box ${data.class}`}>
             <Link 
-                to={`/${data.path}/${data.class}`}>
+                to={`/${data.category}/${data.class}`}>
                 <div className="shade">{data.title}</div>
             </Link>
         </div>

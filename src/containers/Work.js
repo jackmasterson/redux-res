@@ -4,14 +4,14 @@ import {Box} from '../components/Box';
 
 const mapStateToProps= (state) => ({
     state: state,
-    works: state.data.works
+    projects: state.data.projects
 })
 
 class Work extends Component {
     render() {
         return (
             <div>
-                {this.props.works.map(info => 
+                {this.props.projects.map(info => 
                     <Box 
                         key={info.id}
                         {...info}

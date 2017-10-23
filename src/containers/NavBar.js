@@ -7,13 +7,13 @@ export default class NavBar extends Component {
             href: '',
             text: 'Home',
         }, {
-            href: 'works',
+            href: 'projects',
             text: 'Work Examples',
         }, {
-            href: 'skills',
+            href: 'skillset',
             text: 'Tech Stack',
         }, {
-            href: 'extras',
+            href: 'extracurriculars',
             text: 'Extracurriculars',
         }];
     }

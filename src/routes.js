@@ -10,12 +10,12 @@ export const Routes = () => (
     <div >
         <Switch>
             <Route exact path='/' component={Launch} />
-            <Route exact path='/works' component={Work} />
-            <Route exact path='/works/:class' component={SelectedPage} />
-            <Route exact path='/skills' component={Skills} />
-            <Route exact path='/skills/:class' component={SelectedPage} />
-            <Route exact path='/extras' component={Extras} />
-            <Route exact path='/extras/:class' component={SelectedPage} />
+            <Route exact path='/projects' component={Work} />
+            <Route exact path='/projects/:class' component={SelectedPage} />
+            <Route exact path='/skillset' component={Skills} />
+            <Route exact path='/skillset/:class' component={SelectedPage} />
+            <Route exact path='/extracurriculars' component={Extras} />
+            <Route exact path='/extracurriculars/:class' component={SelectedPage} />
         </Switch>
     </div >
 )

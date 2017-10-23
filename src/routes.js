@@ -11,9 +11,11 @@ export const Routes = () => (
         <Switch>
             <Route exact path='/' component={Launch} />
             <Route exact path='/works' component={Work} />
-            <Route exact path='/skills' component={Skills} />
-            <Route exact path='/extras' component={Extras} />
             <Route exact path='/works/:class' component={SelectedPage} />
+            <Route exact path='/skills' component={Skills} />
+            <Route exact path='/skills/:class' component={SelectedPage} />
+            <Route exact path='/extras' component={Extras} />
+            <Route exact path='/extras/:class' component={SelectedPage} />
         </Switch>
     </div >
 )

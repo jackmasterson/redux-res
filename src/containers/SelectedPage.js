@@ -28,7 +28,6 @@ class SelectedPage extends Component {
         this.props.filterNow(info[0]);
     }
     render() {
-        console.log(this.props.filter);
         if (this.props.filter) {
             return (
                 <h1>{this.props.filter.title}</h1>

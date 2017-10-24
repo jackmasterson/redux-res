@@ -10,7 +10,7 @@ const mapStateToProps= (state) => ({
 class Work extends Component {
     render() {
         return (
-            <div>
+            <div className="box-wrapper">
                 {this.props.projects.map(info => 
                     <Box 
                         key={info.id}

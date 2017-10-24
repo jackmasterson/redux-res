@@ -1,37 +1,24 @@
+body {
+  background-color: gray;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 .box {
-  margin: 3vw 1vw 3vw 1vw;
+  margin: 3vw 3vw 3vw 3vw;
   display: inline-block;
   text-align: center;
   padding: 3vw;
   border: 1px solid black;
+  width: 10vw;
+  max-height: 5vh;
 }
 
 .box-wrapper {
-  width: 100vw;
+  width: 80vw;
+  overflow: hidden;
+  margin-left: 10vw;
 }
 
 .shade {
@@ -51,7 +38,27 @@
   width: 100vw;
 }
 
-/* different projects */
+.slider-animate {
+  transition: 2s;
+  transform: translate(0, 2px);
+}
+
+.slider-reverse {
+  transition: 2s;
+  transform: translate(0, 0);
+}
+
+.grow {
+  transition: 2s;
+  transform: scale(1.5, 1.5);
+}
+
+.normal {
+  transition: 2s;
+  transform: scale(1, 1);
+}
+
+/* different backgrounds */
 .arcade-game {
   background: url('./img/arcade.png') center center no-repeat;
 }

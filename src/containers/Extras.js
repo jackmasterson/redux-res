@@ -10,7 +10,7 @@ const mapStateToProps = (state) => ({
 class Extras extends Component {
     render() {
         return (
-            <div>
+            <div className="box-wrapper">
                 {this.props.extracurriculars.map(info =>
                     <Box
                         key={info.id}

@@ -10,7 +10,7 @@ const mapStateToProps = (state) => ({
 class Skills extends Component {
     render() {
         return (
-            <div>
+            <div className="box-wrapper">
                 {this.props.skillset.map(info =>
                     <Box
                         key={info.id}

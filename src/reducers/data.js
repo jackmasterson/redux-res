@@ -1,31 +1,43 @@
 const initialState = {
+    nav: [{
+        title: 'projects',
+        key: 1,
+    }, {
+        title: 'skillset',
+        key: 2,
+    }, {
+        title: 'extracurriculars',
+        key: 3,
+    }],
     projects: [{
         title: 'Bus App',
         key: 1,
         class: 'bus-app',
         category: 'projects',
     }, {
-        title: 'Bus Website',
+        title: 'Bus Web',
         key: 2,
         class: 'bus-website',
         category: 'projects',
     }, {
-        title: 'Old Resume',
+        title: 'Old Res',
         key: 3,
         class: 'old-resume',
         category: 'projects',
     }, {
-        title: 'Basic Data',
+        title: 'Data',
         key: 4,
         class: 'basic-data',
         category: 'projects',
+        src: 'https://rawgit.com/jackmasterson/nycstats/master/index.html',
     }, {
-        title: 'Arcade Game',
+        title: 'Arcade',
         key: 5,
         class: 'arcade-game',
         category: 'projects',
+        src: 'https://cdn.rawgit.com/jackmasterson/canvasArcade/master/app/index.html',
     }, {
-        title: 'Neighborhood Map',
+        title: 'Mapped',
         key: 6,
         class: 'neighborhood-map',
         category: 'projects',
@@ -37,17 +49,17 @@ const initialState = {
         class: 'languages',
         category: 'skillset',
     }, {
-        title: 'Frameworks/Libraries',
+        title: 'Libs',
         key: 2,
         class: 'frameworks',
         category: 'skillset',
     }, {
-        title: 'Build Tools',
+        title: 'Tools',
         key: 3,
         class: 'build-tools',
         category: 'skillset',
     }],
-    extracurriculars: [{
+    /*extracurriculars: [{
         title: 'Comedy',
         key: 1,
         class: 'comedy',
@@ -57,7 +69,7 @@ const initialState = {
         key: 2,
         class: 'writing',
         category: 'extracurriculars',
-    }]
+    }]*/
 }
 
 const DATA_REQUESTED = 'DATA_REQUESTED';

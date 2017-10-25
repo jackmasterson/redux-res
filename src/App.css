@@ -1,36 +1,52 @@
 body {
-  background-color: gray;
+  background: url('./img/shark-two.png') center center fixed no-repeat;
 }
 .App {
   text-align: center;
 }
 
 .box {
-  margin: 3vw 3vw 3vw 3vw;
+  margin: 7vw 3vw 7vw 3vw;
   display: inline-block;
   text-align: center;
   padding: 3vw;
   border: 1px solid black;
   width: 10vw;
-  max-height: 5vh;
+  max-height: 10vh;
 }
 
 .box-wrapper {
   width: 80vw;
   overflow: hidden;
   margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sub-box {
+    color: white;
 }
 
 .shade {
   background: rgba(0,0,0,0.5);
-  color: white;
-  padding: 5px;
   border-radius: 5px;
+}
+
+.nav-bar {
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .nav-item {
   display:inline-block;
   margin: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
 }
 
 .preview {
@@ -79,25 +95,25 @@ body {
     background: url('./img/data.png') center center no-repeat;
 }
 
-.languages {
+/* .languages {
     background: url('./img/ul.png') center center no-repeat;
-}
+} */
 
 .comedy {
   background: url('./img/improv.jpg') center center no-repeat;
 }
 
-.frameworks {
+/* .frameworks {
     background: url('./img/data.png') center center no-repeat;
-}
+} */
 
 .writing {
     background: url('./img/writing.png') center center no-repeat;
 }
 
-.build-tools {
+/* .build-tools {
     background: url('./img/data.png') center center no-repeat;
-}
+} */
 
 .neighborhood-map {
     background: url('./img/map.png') center center no-repeat;

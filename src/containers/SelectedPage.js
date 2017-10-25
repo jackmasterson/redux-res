@@ -28,17 +28,24 @@ class SelectedPage extends Component {
         this.props.filterNow(info[0]);
     }
     render() {
-        if (this.props.filter) {
+        if (this.props.filter && this.props.filter.src) {
             return (
                 <div>
                     <h1>{this.props.filter.title}</h1>
                     <iframe className="preview" src={this.props.filter.src}></iframe>
                 </div>
             );
-        } else {
+        } else if (!this.props.filter) {
             return (
                 <h1>Updating...</h1>
             )
+        } else if (this.props.filter && !this.props.filter.src) {
+            return (
+                <div>
+                    <h1>{this.props.filter.title}</h1>
+                    <p>No preview for this one but keep checking back!</p>
+                </div>
+            );
         }
 
     }

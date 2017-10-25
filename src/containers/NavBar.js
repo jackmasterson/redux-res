@@ -12,14 +12,14 @@ export default class NavBar extends Component {
         }, {
             href: 'skillset',
             text: 'Tech Stack',
-        }, {
+        }, /*{
             href: 'extracurriculars',
             text: 'Extracurriculars',
-        }];
+        }*/];
     }
     render() {
         return (
-            <div>
+            <div className="nav-bar">
                 {this.links.map(link => 
                     <NavItem key={link.href} {...link} />
                 )}

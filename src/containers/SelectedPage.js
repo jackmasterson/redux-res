@@ -43,7 +43,13 @@ class SelectedPage extends Component {
             return (
                 <div>
                     <h1>{this.props.filter.title}</h1>
-                    <p>No preview for this one but keep checking back!</p>
+                    {this.props.filter.list.map(data => 
+                        <div
+                            key={data.key}
+                            {...data}>
+                            {data.type}
+                        </div>
+                    )}
                 </div>
             );
         }

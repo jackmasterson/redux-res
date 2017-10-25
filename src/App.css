@@ -12,7 +12,8 @@ body {
   padding: 3vw;
   border: 1px solid black;
   width: 10vw;
-  max-height: 10vh;
+  max-height: 20vh;
+  align-self: center;
 }
 
 .box-wrapper {
@@ -22,7 +23,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sub-box {

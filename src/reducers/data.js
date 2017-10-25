@@ -5,10 +5,10 @@ const initialState = {
     }, {
         title: 'skillset',
         key: 2,
-    }, {
+    },/* {
         title: 'extracurriculars',
         key: 3,
-    }],
+    }*/],
     projects: [{
         title: 'Bus App',
         key: 1,
@@ -48,16 +48,55 @@ const initialState = {
         key: 1,
         class: 'languages',
         category: 'skillset',
+        list: [{
+            key: 1,
+            type: 'javascript',
+        }, {
+            key: 2, 
+            type: 'nodejs', 
+        }, {
+            key: 3,
+            type: 'entry-level python'
+        }],
     }, {
         title: 'Libs',
         key: 2,
         class: 'frameworks',
         category: 'skillset',
+        list: [{
+            key: 1,
+            type: 'backbonejs', 
+        }, {
+            key: 2, 
+            type: 'angular 1.0', 
+        }, {
+            key: 3, 
+            type: 'react', 
+        }, {
+            key: 4, 
+            type: 'react-native', 
+        }, {
+            key: 5,
+            type: 'redux'
+        }],
     }, {
         title: 'Tools',
         key: 3,
         class: 'build-tools',
         category: 'skillset',
+        list: [{
+            key: 1,
+            type: 'aws', 
+        }, {
+            key: 2, 
+            type: 'gulp', 
+        }, {
+            key: 3, 
+            type: 'webpack', 
+        }, {
+            key: 4,
+            type: 'grunt'
+        }],
     }],
     /*extracurriculars: [{
         title: 'Comedy',

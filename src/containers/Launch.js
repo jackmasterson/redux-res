@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Box } from '../components/Box';
 import {connect} from 'react-redux';
 
@@ -14,7 +15,6 @@ class Main extends Component {
         console.log(this.props);
         return (
             <div>
-                <div>Jack Masterson</div>
                 <div className="box-wrapper flex-wrapper">
                     {this.props.data.nav.map((info) =>
                         <Box 

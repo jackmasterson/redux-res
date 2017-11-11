@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {ButtonToolbar, Button} from 'react-bootstrap';
 
 const methods = {
     initiateTransition(e, type) {
@@ -57,7 +58,10 @@ export const Box = (data) => {
         // classed = data.title;
     }
     return (
-        <div className={`box shade ${data.title}`}>
+        <Button 
+            bsStyle="success"
+            bsSize="large" 
+            className={`${data.title}`}>
             <Link 
                 to={path}>
                 <div 
@@ -66,6 +70,6 @@ export const Box = (data) => {
                     {data.title.charAt(0).toUpperCase() + data.title.slice(1)}
                 </div>
             </Link>
-        </div>
+        </Button>
     );
 }
